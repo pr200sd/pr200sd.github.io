@@ -23,7 +23,7 @@
 			<section id="first" class="main">
 				<header>
 					<div class="container">
-					<h1 style="color:red;">PRESP32</h1>
+					<h3 style="color:black;">PRESP32</h1>
 						<h2>Назначение</h2>
 						<p>Сетевой интерфейс presp32 предназначен для расширения коммуникационных возможностей программируемых реле серии ПР200, ПР102, ПР100. 
 В зависимости от используемой <a href="https://github.com/pr200sd/presp32/wiki/3.1-Версии-программного-обеспечения">прошивки</a> и <a href="https://github.com/pr200sd/presp32/wiki/2.-Модификации-плат">модификации плат</a>, доступны следующие сервисы и протоколы:</p>
@@ -31,17 +31,7 @@
 				</header>
 				<div class="content dark style1 featured">
 					<div class="container">
-						<div class="row">
-							<div class="col-4 col-12-narrow">
-								<section>
-									<span class="feature-icon"><span class="icon fa-paper-plane"></span></span>
-									<header>
-										<h3>Telegram Bot</h3>
-									</header>									
-									<p>поддержка чтения/записи регистров через Tekegram Bot</p>
-<!--									<img src="img/presp32_psram.jpg" width="800" height="600" alt="presp32">-->
-								</section>
-							</div>
+						<div class="row">						
 							<div class="col-4 col-12-narrow">
 								<section>
 									<span class="feature-icon"><span class="icon solid fa-wifi"></span></span>
@@ -51,7 +41,29 @@
 									<p>Подключение к сети через WI-Fi в режиме станции STA и точки доступа AP.</p>
 								</section>
 							</div>
-													
+						
+							<div class="col-4 col-12-narrow">
+								<section>
+									<span class="feature-icon"><span class="icon fa-paper-plane"></span></span>
+									<header>
+										<h3>Telegram Bot</h3>
+									</header>									
+									<p>Поддержка чтения/записи регистров через Tekegram Bot</p>
+								</section>
+							</div>
+							
+							
+							<div class="col-4 col-12-narrow">
+								<section>
+									<span class="feature-icon"><span class="icon fa-home-lg"></span></span>
+									<header>
+										<h3>Home Kit</h3>
+									</header>									
+									<p>Поддержка сервиса home Kit для управление освещением до 24 дискретных каналов,
+									возможность управлять выходами реле при помощи голосовых команд</p>
+								</section>
+							</div>
+							
 							
 							<div class="col-4 col-12-narrow">
 								<section>
@@ -59,9 +71,14 @@
 									<header>
 										<h3>Логгер</h3>
 									</header>
-									<p>Поддержка логирования на ПК через json файл и на microSD карту.</p>
+									<p>Поддержка логирования на ПК через json файл и на microSD карту.
+									Скачивание файлов с sd карты по сети через встроенный файловый менеджер
+									без необходимости доставать карту из платы.
+									</p>
 								</section>
 							</div>
+							
+							
 							<div class="col-12">
 								<footer>
 									<a href="#second" class="button scrolly">Gravida tempor lacinia</a>
