@@ -103,9 +103,8 @@
 									Возможность выбирать разные форматы для архвирования:
 									<b>uint16</b>, <b>uint32</b>, <b>float</b>, <b>bin</b>.
 									Скачивание файлов с sd карты по сети через встроенный файловый менеджер
-									без извлечения карты из платы.
+									без необходимости доставать карту из платы.
 									Для регистрации быстрых процессов запись с периодом 100мс, 500мс.
-									Для синхронизации времени используется внешний NTP сервер. 
 									</p>
 								</section>
 							</div>
@@ -113,15 +112,13 @@
 							
 							<div class="col-4 col-12-narrow">
 								<section>
-									<span class="feature-icon"><span class="icon solid fa-tools"></span></span>
+									<span class="feature-icon"><span class="icon far fa-tools"></span></span>
 									<header>
 										<h3>Настройка</h3>
 									</header>
 									<p>Все настройки осуществляются через встроенный WEB интерфейс.
 									настройки сохраняются в энергонезависимой памяти.									
 									Обновление прошивки без физического доступа к плате через OTA.
-									Для контроля работы и состояния интерфейса на плате установлен светодиод,
-									его режимы можно настроить через WEB интерфейс.
 									</p>
 								</section>
 							</div>		
@@ -129,14 +126,13 @@
 							
 							<div class="col-4 col-12-narrow">
 								<section>
-									<span class="feature-icon"><span class="icon solid fa-link"></span></span>
+									<span class="feature-icon"><span class="icon fa-link"></span></span>
 									<header>
 										<h3>Протоколы и интерфейсы</h3>
 									</header>
-									<p>Поддерживаются проводные и беспроводные протоколы для доступа к регистрам.
-									Для связи с программируемыми реле используется Modbus RTU. 
+									<p>Поддерживаются проводные и безпроводные протоколы для связи.
+									Для связи с программируемыми реле используется Modbus RTU.
 									Modbus TCP, MQTT используется для создания визуализации на телефоне, ПК. 
-									Telegram Bot для быстрого доступа к информации с минимальными настройками.
 									</p>
 								</section>
 							</div>								
@@ -156,6 +152,23 @@
 				<header>
 					<div class="container">
 						<h2>Модификации интерфейсных плат</h2>
+<!--						<p>Существует несколько модификаций сетевых интерфейсов для подключения к программируемым реле.
+						Встариваемый вариант для установки в модификацию ПР200, поддержан режим Master и Slave.
+						Обмен данными через UART по протоколу Modbus RTU.
+						Для подключения внешних датчиков 1-WIRE/I2C возможна установка 4 pin разъема.
+						</p>
+						<p>
+						Вариант внешнего интерфейса, подключается через RS485, 
+						можно использовать совместно с модификациями ПР200, ПР102, ПР100, подключение через WI-FI.
+						В случае использования внешних подключений по 1-wire/I2C рекомендуется использовать внешний вариант
+						платы, в этом случае осуществляется гальваническая развязка через сетевой интерфейс ПР.
+						</p>
+						<p>
+						Вариант в виде USB стика, можно использовать так же как внешний вариант, 
+						или как отладочный комплект при пусконаладочных работах на объекте, подключение через WI-FI.
+						</p>
+						Версия с подключением по Ethernet. Подходит если в месте установки связь с WI-FI неустойчивая.
+						-->
 					</div>
 				</header>
 				<div class="content dark style2">
@@ -167,7 +180,6 @@
 						Встариваемый вариант для установки в модификацию ПР200, поддержан режим Master и Slave.
 						Обмен данными через UART по протоколу Modbus RTU.
 						Для подключения внешних датчиков 1-WIRE/I2C возможна установка 4 pin разъема.
-						Поддержка microSD карты для записи архивов.
 						</p>								
 									<div class="col-12"><a href="#" class="image fit"><img src="img/presp32_sd.jpg" alt="" /></a></div>
 								</section>
@@ -179,7 +191,6 @@
 						можно использовать совместно с модификациями ПР200, ПР102, ПР100, подключение через WI-FI.
 						В случае использования внешних подключений по 1-wire/I2C рекомендуется использовать внешний вариант
 						платы, в этом случае осуществляется гальваническая развязка через сетевой интерфейс ПР.
-						Поддержка microSD карты для записи архивов.
 						</p>								
 									<div class="col-6"><a href="#" class="image fit"><img src="img/presp32_ext.jpg" alt="" /></a></div>
 								</section>
@@ -190,7 +201,6 @@
 						<p>
 						Вариант в виде USB стика, можно использовать так же как внешний вариант, 
 						или как отладочный комплект при пусконаладочных работах на объекте, подключение через WI-FI.
-						Поддержка microSD карты для записи архивов.
 						</p>
 								
 									<div class="col-6"><a href="#" class="image fit"><img src="img/pr_stick_tr.jpg" alt="" /></a></div>
@@ -200,7 +210,6 @@
 								<section>	
 						<p>
 						Версия с подключением по Ethernet. Подходит если в месте установки связь с WI-FI неустойчивая.
-						Функционал аналогичен предыдущим версиям, только связь через Ethernet.
 						</p>						
 									<div class="col-6"><a href="#" class="image fit"><img src="img/pr_eth1.jpg" alt="" /></a></div>
 								</section>								
@@ -227,7 +236,9 @@
 					</div>
 				</header>
 				<div class="content dark style3">
-					<div class="container">						
+					<div class="container">
+	<!--					<span class="image featured"><img src="images/pic07.jpg" alt="" /></span>-->
+						
 						<div class="row">							
 							<div class="col-6 col-12-narrow">
 								<section>										
@@ -261,15 +272,18 @@
 							</div>
 							<div class="col-6 col-12-narrow">
 								<section>										
-								<!--	<div class="col-6"><a href="http://www.youtube.com/watch?v=RPJWyqziN8Q" class="image fit"><img src="img/presp32_log_z.jpg" alt="" /></a></div>-->
-									<div class="col-6"><a href="http://www.youtube.com/watch?v=RPJWyqziN8Q" class="image fit"><img src="http://img.youtube.com/vi/RPJWyqziN8Q/0.jpg" alt="" /></a></div>
-									
+									<div class="col-6"><a href="http://www.youtube.com/watch?v=RPJWyqziN8Q" class="image fit"><img src="img/presp32_log_z.jpg" alt="" /></a></div>						
 								</section>
 							</div>
 							
-						</div>						
+						</div>
 						
-		<!--		
+						
+		<!--				
+						<a href="http://www.youtube.com/watch?v=7YfrBtO3Dos">Управление освещением, Homekit, TelegramBot, Modbus TCP</a> 
+						<a href="http://www.youtube.com/watch?v=9O_YcAMrthE">ПР102+ПРМ-1. Сценарий управления освещением</a> 
+						<div class="col-6"><a href="http://www.youtube.com/watch?v=9O_YcAMrthE" class="image fit"><img src="http://img.youtube.com/vi/7YfrBtO3Dos/0.jpg" alt="" /></a></div>
+		-->				
 						<div class="row">
 							<div class="col-4 col-12-narrow">
 								<h3>Diam vivamus turpis lorem sodales lectus ornare</h3>
@@ -315,9 +329,9 @@
 					</div>
 				</div>
 			</section>
--->
+
 		<!-- Basic Elements -->
-		<!-- 
+		<!-- -->
 			<section class="main">
 				<header>
 					<div class="container">
