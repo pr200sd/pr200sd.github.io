@@ -25,8 +25,8 @@
 					<div class="container">
 					<h2 style="color:black;">Cетевой интерфейс PRESP32</h2>
 						
-						<p>Сетевой интерфейс presp32 предназначен для расширения
-						коммуникационных возможностей программируемых реле серии ПР200, ПР102, ПР100. 
+						<p>Сетевой интерфейс <b>presp32</b> предназначен для расширения
+						коммуникационных возможностей программируемых реле серии <b>ПР200</b>, <b>ПР102</b>, <b>ПР100</b>. 
 						В зависимости от используемой <a href="https://github.com/pr200sd/presp32/wiki/3.1-Версии-программного-обеспечения">прошивки</a> 
 						и <a href="https://github.com/pr200sd/presp32/wiki/2.-Модификации-плат">модификации плат</a>, доступны следующие сервисы и протоколы:</p>
 					</div>	
@@ -57,8 +57,8 @@
 									<header>
 										<h3>Интерфейс WI-FI/Ethernet</h3>
 									</header>
-									<p>Подключение к сети через WI-Fi в режиме станции STA и точки доступа AP.
-									В разработке версия с подключением к сети через Ethernet, с возможностью 
+									<p>Подключение к сети через <b>WI-Fi</b> в режиме станции <b>STA</b> и точки доступа <b>AP</b>.
+									В разработке версия с подключением к сети через <b>Ethernet</b>, с возможностью 
 									использовать WI-FI в качестве резервного канала связи.
 									</p>
 								</section>
@@ -70,8 +70,8 @@
 									<header>
 										<h3>Telegram Bot</h3>
 									</header>									
-									<p>Поддержка чтения/записи регистров через Telegram Bot.
-									Получение информации по настройкам сервисам.</p>
+									<p>Поддержка чтения/записи регистров через <b>Telegram Bot</b>.
+									Получение информации по настройкам и сервисам.</p>
 								</section>
 							</div>
 							
@@ -82,11 +82,11 @@
 									<header>
 										<h3>Home Kit</h3>
 									</header>									
-									<p>Реализовано 4 профиля: Bridge, Single accessory 
+									<p>Реализовано на выбор 4 профиля. <b>Bridge</b> и <b>Single accessory</b> 
 									для управление освещением до 24 дискретных каналов,
 									возможность управлять выходами реле при помощи голосовых команд.
-									Temperature sensor: 8 каналов, для ввода данных с регистров Modbus в приложение Дом.
-									Termostat: до 4 каналов, для создания интерфейсов термостата в разных режимах.
+									<b>Temperature sensor</b> до 8 каналов, для ввода данных с регистров Modbus в приложение Дом.
+									<b>Termostat</b> до 4 каналов, для создания интерфейсов термостата в разных режимах.
 									Быстрая интеграция через QR-Code.
 									</p>
 								</section>
@@ -99,7 +99,7 @@
 									<header>
 										<h3>Логгер</h3>
 									</header>
-									<p>Поддержка логирования на ПК через json файл и на microSD карту.
+									<p>Поддержка логирования на ПК через <b>script</b> файл и на <b>microSD</b> карту.
 									Возможность выбирать разные форматы для архвирования:
 									<b>uint16</b>, <b>uint32</b>, <b>float</b>, <b>bin</b>.
 									Скачивание файлов с sd карты по сети через встроенный файловый менеджер
@@ -117,9 +117,9 @@
 									<header>
 										<h3>Настройка</h3>
 									</header>
-									<p>Все настройки осуществляются через встроенный WEB интерфейс.
+									<p>Все настройки осуществляются через встроенный <b>WEB</b> интерфейс.
 									настройки сохраняются в энергонезависимой памяти.									
-									Обновление прошивки без физического доступа к плате через OTA.
+									Обновление прошивки без физического доступа к плате через <b>OTA</b>.
 									Для контроля работы и состояния интерфейса на плате установлен светодиод,
 									его режимы можно настроить через WEB интерфейс.
 									</p>
@@ -134,9 +134,9 @@
 										<h3>Протоколы и интерфейсы</h3>
 									</header>
 									<p>Поддерживаются проводные и беспроводные протоколы для доступа к регистрам.
-									Для связи с программируемыми реле используется Modbus RTU. 
-									Modbus TCP, MQTT используется для создания визуализации на телефоне, ПК. 
-									Telegram Bot для быстрого доступа к информации с минимальными настройками.
+									Для связи с программируемыми реле используется <b>Modbus RTU</b>. 
+									<b>Modbus TCP</b>, <b>MQTT</b> используется для создания визуализации на телефоне, ПК. 
+									<b>Telegram Bot</b> для быстрого доступа к информации с минимальными настройками.
 									</p>
 								</section>
 							</div>								
@@ -164,9 +164,9 @@
 							<div class="col-6 col-12-narrow">
 								<section>
 						<p>Существует несколько модификаций сетевых интерфейсов для подключения к программируемым реле.
-						Встариваемый вариант для установки в модификацию ПР200, поддержан режим Master и Slave.
+						Встариваемый вариант для установки в модификацию ПР200, поддержан режим <b>Master</b> и <b>Slave</b>.
 						Обмен данными через UART по протоколу Modbus RTU.
-						Для подключения внешних датчиков 1-WIRE/I2C возможна установка 4 pin разъема.
+						Для подключения внешних датчиков <b>1-WIRE/I2C</b> возможна установка 4 pin разъема.
 						Поддержка microSD карты для записи архивов.
 						</p>								
 									<div class="col-12"><a href="#" class="image fit"><img src="img/presp32_sd.jpg" alt="" /></a></div>
@@ -223,7 +223,7 @@
 					<div class="container">
 						<h2>Примеры использования</h2>
 						<p>По всем сервисам и настройкам подготовлены видео для быстрого старта.<br />
-						В описании к видео прикреплены примеры проектов для быстрого развертывания а программе OwenLogic.</p>
+						В описании к видео прикреплены примеры проектов для быстрого развертывания а программе <b>OwenLogic</b>.</p>
 					</div>
 				</header>
 				<div class="content dark style3">
@@ -268,255 +268,15 @@
 							</div>
 							
 						</div>						
-						
-		<!--		
-						<div class="row">
-							<div class="col-4 col-12-narrow">
-								<h3>Diam vivamus turpis lorem sodales lectus ornare</h3>
-								<p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales. Diam
-								tempor dui lacinia eget ornare varius gravida. Gravida dis placerat lectus ante
-								vel nunc euismod est turpis sodales. Diam tempor dui lacinia accumsan vivamus
-								augue cubilia vivamus nisi eu eget ornare varius gravida euismod.  Gravida dis
-								lorem ipsum dolor placerat magna tempus feugiat.</p>
-								<p>Lectus ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
-								accumsan vivamus augue cubilia vivamus nisi eu eget ornare varius gravida dolore
-								euismod lorem ipsum dolor sit amet consequat. vivamus nisi eu eget ornare varius
-								gravida dolore euismod lorem ipsum dolor sit amet consequat. vivamus nisi eu
-								eget ornare et magna.</p>
-							</div>
-							<div class="col-4 col-12-narrow">
-								<p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales. Diam
-								tempor dui lacinia eget ornare varius gravida. Gravida dis placerat lectus ante
-								vel nunc euismod est turpis sodales. Diam tempor dui lacinia accumsan vivamus
-								augue cubilia vivamus nisi eu eget ornare varius gravida euismod.  Gravida dis
-								lorem ipsum dolor placerat magna tempus feugiat.</p>
-								<p>Lectus ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
-								accumsan vivamus augue cubilia vivamus nisi eu eget ornare varius gravida dolore
-								euismod lorem ipsum dolor sit amet consequat eget ornare varius gravida euismod.
-								Gravida dis lorem ipsum dolor placerat magna tempus feugiat magna tempus lorem.</p>
-								<p>Lectus ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
-								accumsan vivamus augue cubilia.</p>
-							</div>
-							<div class="col-4 col-12-narrow">
-								<p>Placerat lectus ante vel nunc euismod est turpis sodales. Diam tempor dui
-								lacinia eget ornare varius gravida. Gravida dis placerat lectus ante vel nunc
-								euismod est turpis sodales. Diam tempor dui lacinia accumsan vivamus augue
-								cubilia vivamus nisi eu eget ornare varius gravida euismod.  Gravida dis
-								lorem ipsum dolor placerat magna tempus feugiat. Lectus ante vel nunc euismod
-								est turpis sodales. Diam tempor dui lacinia dolore.</p>
-								<p>Accumsan vivamus augue cubilia vivamus nisi eu eget ornare varius gravida
-								dolore euismod lorem ipsum dolor sit amet conseismod lorem ipsum dolor sit amet
-								consequat lorem ipsum consequat feugiat sed tempus euismod feugiat veroeros.</p>
-								<footer>
-									<a href="#fourth" class="button scrolly">Ipsum ornare lorem dolor</a>
-								</footer>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
--->
-		<!-- Basic Elements -->
-		<!-- 
-			<section class="main">
-				<header>
-					<div class="container">
-						<h2>A Whole Lotta Elements</h2>
-						<p>General purpose elements for every general purpose. Or something like that.</p>
-					</div>
-				</header>
-				<div class="content style1 dark">
-					<div class="container">
-						<section>
-							<header>
-								<h3>Paragraph</h3>
-								<p>This is a byline</p>
-							</header>
-							<p>Phasellus nisl nisl, varius id <sup>porttitor sed pellentesque</sup> ac orci. Pellentesque
-							habitant <strong>strong</strong> tristique <b>bold</b> et netus <i>italic</i> malesuada <em>emphasized</em> ac turpis egestas. Morbi
-							leo suscipit ut. Praesent <sub>id turpis vitae</sub> turpis pretium ultricies. Vestibulum sit
-							amet risus elit.</p>
-						</section>
-						<section>
-							<header>
-								<h3>Blockquote</h3>
-							</header>
-							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget.
-							tempus euismod. Vestibulum ante ipsum primis in faucibus. Cras sit amet urna eros, id egestas
-							tempus ante ipsum primis in faucibus orci luctus et ultrices.</blockquote>
-						</section>
-						<section>
-							<header>
-								<h3>Divider</h3>
-							</header>
-							<p>Donec consectetur <a href="#">vestibulum dolor et pulvinar</a>. Etiam vel felis enim, at viverra
-							ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
-							facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
-							tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-							posuere cubilia.</p>
-							<hr />
-							<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
-							ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
-							facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
-							tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-							posuere cubilia.</p>
-						</section>
-						<section>
-							<header>
-								<h3>Unordered List</h3>
-							</header>
-							<ul class="default">
-								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
-								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
-								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
-								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
-							</ul>
-						</section>
-						<section>
-							<header>
-								<h3>Ordered List</h3>
-							</header>
-							<ol class="default">
-								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
-								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
-								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
-								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
-							</ol>
-						</section>
-						<section>
-							<header>
-								<h3>Table</h3>
-							</header>
-							<div class="table-wrapper">
-								<table class="default">
-									<thead>
-										<tr>
-											<th>ID</th>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>00001</td>
-											<td>Lorem ipsum dolor</td>
-											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>00002</td>
-											<td>Sit amet nullam</td>
-											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>00003</td>
-											<td>Feugiat felis viverra</td>
-											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>00004</td>
-											<td>Sagittis enim felis</td>
-											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>00005</td>
-											<td>Nullam sed vestibulum</td>
-											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
-											<td>19.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="3"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</section>
-						<section>
-							<header>
-								<h3>Form</h3>
-							</header>
-							<form method="post" action="#">
-								<div class="row gtr-50">
-									<div class="col-6 col-12-narrow">
-										<input type="text" name="name" id="name" value="" placeholder="John Doe" />
-									</div>
-									<div class="col-6 col-12-narrow">
-										<input type="text" name="email" id="email" value="" placeholder="johndoe@domain.tld" />
-									</div>
-									<div class="col-12">
-										<div class="select" tabindex="-1">
-											<select name="department" id="department">
-												<option value="">Choose a department</option>
-												<option value="1">Manufacturing</option>
-												<option value="2">Administration</option>
-												<option value="3">Support</option>
-											</select>
-										</div>
-									</div>
-									<div class="col-12">
-										<input type="text" name="subject" id="subject" value="" placeholder="Enter your subject" />
-									</div>
-									<div class="col-12">
-										<textarea name="message" id="message" placeholder="Enter your message"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" class="button" value="Send Message" /></li>
-											<li><input type="reset" class="button alt" value="Clear Form" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</section>
-					</div>
-				</div>
-			</section>
-<!--	 -->	
-
-
-		<!-- Fourth -->
-<!--
-			<section id="fourth" class="main">
-				<header>
-					<div class="container">
-						<h2>Sed feugiat ipsum consequat</h2>
-						<p>Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet consequat<br />
-						feugiat. Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet.</p>
-					</div>
-				</header>
-				<div class="content style4 featured">
-					<div class="container medium">
-						<form method="post" action="#">
-							<div class="row gtr-50">
-								<div class="col-6 col-12-mobile"><input type="text" placeholder="Name" /></div>
-								<div class="col-6 col-12-mobile"><input type="text" placeholder="Email" /></div>
-								<div class="col-12"><textarea name="message" placeholder="Message"></textarea></div>
-								<div class="col-12">
-									<ul class="actions special">
-										<li><input type="submit" class="button" value="Send Message" /></li>
-										<li><input type="reset" class="button alt" value="Clear Form" /></li>
-									</ul>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</section>
- -->
-
+	
+		
 
 		<!-- Footer -->
 			<section id="footer">
 				<ul class="icons">
 					<li><a href="https://www.youtube.com/channel/UCj4HeZMvSH5H3d_t6iDlQOQ" class="icon brands fa-youtube"><span class="label">Yuotube</span></a></li>					
 					<li><a href="https://github.com/pr200sd/presp32/wiki" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="mailto:pr200sd@gmail.com" class="icon solid fa-envelope-o"><span class="label">@mail</span></a></li>
 				</ul>
 				<div class="copyright">
 					<ul class="menu">
